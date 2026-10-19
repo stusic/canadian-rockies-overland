@@ -1,0 +1,34 @@
+[
+  {
+    "id": "bull-river",
+    "name": "Bull River",
+    "generalArea": "East Kootenay region, British Columbia (Kootenay River drainage, near Wardner/Cranbrook)",
+    "notes": "Candidate dispersed-camping / 4x4 scouting region. Exact access points, trail conditions, dispersed campsites, and land-use status are not yet researched.",
+    "status": "unresearched",
+    "sourceUrl": null
+  },
+  {
+    "id": "white-river",
+    "name": "White River",
+    "generalArea": "British Columbia Kootenays — which White River drainage this refers to has not been confirmed",
+    "notes": "Candidate scouting region. Even the general location needs to be confirmed before any routes or coordinates are added — there is more than one \"White River\" in the region.",
+    "status": "unresearched",
+    "sourceUrl": null
+  },
+  {
+    "id": "kootenay-palliser",
+    "name": "Kootenay–Palliser",
+    "generalArea": "Palliser River valley / Height of the Rockies area, East Kootenay region, British Columbia",
+    "notes": "Candidate dispersed-camping / 4x4 scouting region. Exact access points, trail conditions, dispersed campsites, and land-use status are not yet researched.",
+    "status": "unresearched",
+    "sourceUrl": null
+  },
+  {
+    "id": "ghost-waiparous",
+    "name": "Ghost–Waiparous",
+    "generalArea": "Ghost River / Waiparous Creek area west of Cochrane, Alberta",
+    "notes": "Known public off-highway-vehicle and recreation area in Alberta. Specific trails, legal land-use boundaries, and camping areas within it still need to be sourced from official Alberta Environment and Protected Areas references before they are added to the map.",
+    "status": "unresearched",
+    "sourceUrl": null
+  }
+]

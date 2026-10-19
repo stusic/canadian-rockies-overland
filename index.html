@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Canadian Rockies Overland Planner</title>
+<meta name="description" content="Collaborative map-based trip planner for a Denver-to-Canadian-Rockies overland route." />
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header id="app-header">
+  <button id="sidebar-toggle" class="icon-button" aria-label="Toggle sidebar" aria-expanded="true">&#9776;</button>
+  <h1>Canadian Rockies Overland Planner</h1>
+  <div class="header-actions">
+    <button id="import-btn" class="text-button">Import</button>
+    <button id="export-btn" class="text-button">Export</button>
+  </div>
+</header>
+
+<div id="app-body">
+  <aside id="sidebar">
+
+    <section class="panel">
+      <h2>Base map</h2>
+      <div id="basemap-controls" class="button-row">
+        <button class="basemap-btn active" data-basemap="satellite">Satellite</button>
+        <button class="basemap-btn" data-basemap="topo">Topographic</button>
+        <button class="basemap-btn" data-basemap="street">Street</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Layer types</h2>
+      <ul id="category-list" class="checkbox-list"></ul>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header-row">
+        <h2>Itinerary days</h2>
+        <div class="button-row small">
+          <button id="days-all-on" class="text-button small">All</button>
+          <button id="days-all-off" class="text-button small">None</button>
+        </div>
+      </div>
+      <ul id="day-list" class="checkbox-list"></ul>
+    </section>
+
+    <section class="panel">
+      <h2>Scouting regions <span class="hint">(unresearched)</span></h2>
+      <p class="panel-note">Named regions of interest with no confirmed coordinates yet. Not plotted on the map until located and sourced.</p>
+      <ul id="scouting-region-list" class="region-list"></ul>
+    </section>
+
+    <section id="inn-night-section" class="panel hidden">
+      <h2>Flexible inn night</h2>
+      <p id="inn-night-range" class="panel-note"></p>
+      <p class="panel-note">Lodging</p>
+      <ul id="inn-night-lodging" class="region-list"></ul>
+      <p class="panel-note">Dinner</p>
+      <ul id="inn-night-dinner" class="region-list"></ul>
+      <p class="panel-note">Evening activities</p>
+      <ul id="inn-night-evening" class="region-list"></ul>
+    </section>
+
+    <section class="panel">
+      <h2>Legend</h2>
+      <ul class="legend-list">
+        <li><span class="legend-swatch verified"></span> Verified</li>
+        <li><span class="legend-swatch approximate"></span> Approximate</li>
+        <li><span class="legend-swatch unresearched"></span> Unresearched</li>
+      </ul>
+    </section>
+
+  </aside>
+
+  <main id="map-container">
+    <div id="map"></div>
+    <div id="daynav-control">
+      <div class="daynav-row">
+        <button id="daynav-prev" class="icon-button" aria-label="Previous day">&#8249;</button>
+        <span id="daynav-label" class="daynav-label">Day 1</span>
+        <button id="daynav-next" class="icon-button" aria-label="Next day">&#8250;</button>
+      </div>
+      <button id="daynav-zoom-day" class="text-button daynav-zoom">Zoom to Day</button>
+      <button id="daynav-zoom-trip" class="text-button small daynav-trip">Zoom to entire trip</button>
+    </div>
+  </main>
+</div>
+
+<div id="feature-panel" class="hidden" role="dialog" aria-label="Feature details">
+  <button id="feature-panel-close" class="icon-button" aria-label="Close">&times;</button>
+  <div id="feature-panel-content"></div>
+</div>
+
+<input type="file" id="import-file-input" accept=".gpx,.kml,.kmz,.geojson,.json" multiple hidden />
+<div id="export-menu" class="dropdown-menu hidden">
+  <button data-format="geojson">GeoJSON (.geojson)</button>
+  <button data-format="gpx">GPX (.gpx)</button>
+  <button data-format="kml">KML (.kml)</button>
+</div>
+
+<div id="toast" class="hidden"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/@mapbox/togeojson@0.16.2/togeojson.js"></script>
+<script src="https://unpkg.com/tokml@0.4.0/tokml.js"></script>
+<script src="https://unpkg.com/togpx@0.5.4/togpx.js"></script>
+<script src="https://unpkg.com/jszip@3.10.1/dist/jszip.min.js"></script>
+
+<script src="js/state.js"></script>
+<script src="js/mapSetup.js"></script>
+<script src="js/dataLoader.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/dayNav.js"></script>
+<script src="js/featurePanel.js"></script>
+<script src="js/importExport.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

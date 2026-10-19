@@ -1,0 +1,23 @@
+{
+  "trip": {
+    "title": "Canadian Rockies Overland",
+    "origin": "Denver, CO",
+    "destination": "Canadian Rockies (BC / Alberta)",
+    "lastUpdated": "2026-10-18",
+    "notes": "12-day round trip framework. All day titles, routes, and stops below are placeholders for planning and must be researched and verified before use in the field."
+  },
+  "days": [
+    { "id": 1, "title": "Day 1 — Depart Denver, CO", "summary": "Travel day. Route and overnight stop not yet selected.", "status": "planning-framework" },
+    { "id": 2, "title": "Day 2 — En route north", "summary": "Travel day. Route and overnight stop not yet selected.", "status": "planning-framework" },
+    { "id": 3, "title": "Day 3 — En route to the border", "summary": "Travel day. Border crossing point and overnight stop not yet selected.", "status": "planning-framework" },
+    { "id": 4, "title": "Day 4 — Into the Canadian Rockies region", "summary": "Arrival into the general scouting area. Specific entry route not yet selected.", "status": "planning-framework" },
+    { "id": 5, "title": "Day 5 — Scouting: Ghost–Waiparous area", "summary": "Candidate day for the Ghost–Waiparous region. See scouting-regions.json — location and access are unresearched. Acceptable alternate day for the trip's one flexible inn night (see inn-night.json).", "status": "planning-framework" },
+    { "id": 6, "title": "Day 6 — Scouting: Kootenay–Palliser area", "summary": "Candidate day for the Kootenay–Palliser region. See scouting-regions.json — location and access are unresearched. Preferred day for the trip's one flexible inn night (see inn-night.json).", "status": "planning-framework" },
+    { "id": 7, "title": "Day 7 — Scouting: Bull River area", "summary": "Candidate day for the Bull River region. See scouting-regions.json — location and access are unresearched. Acceptable alternate day for the trip's one flexible inn night (see inn-night.json).", "status": "planning-framework" },
+    { "id": 8, "title": "Day 8 — Scouting: White River area", "summary": "Candidate day for the White River region. See scouting-regions.json — location and access are unresearched.", "status": "planning-framework" },
+    { "id": 9, "title": "Day 9 — Flex / buffer day", "summary": "Unallocated day — weather, rest, or overflow from the scouting regions.", "status": "planning-framework" },
+    { "id": 10, "title": "Day 10 — Begin return south", "summary": "Travel day. Route and overnight stop not yet selected.", "status": "planning-framework" },
+    { "id": 11, "title": "Day 11 — En route south", "summary": "Travel day. Route and overnight stop not yet selected.", "status": "planning-framework" },
+    { "id": 12, "title": "Day 12 — Return to Denver, CO", "summary": "Travel day. Route not yet selected.", "status": "planning-framework" }
+  ]
+}

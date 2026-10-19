@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-104.9903, 39.7392] },
+      "properties": {
+        "day": null,
+        "category": "reference-point",
+        "name": "Denver, CO — trip start / end",
+        "description": "Reference marker for the trip's documented origin and return point. Not a routed stop — the actual departure address and route are not yet selected.",
+        "sourceUrl": null,
+        "difficulty": null,
+        "status": "reference",
+        "verified": true
+      }
+    }
+  ]
+}

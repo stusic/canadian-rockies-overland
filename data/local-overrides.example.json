@@ -1,0 +1,12 @@
+{
+  "_comment": "Copy this file to local-overrides.json (already gitignored) to attach real calendar dates or local-event research without ever committing them to this public repo. The app merges this file in automatically if present, and silently ignores it if absent.",
+  "days": {
+    "6": { "date": "2027-07-10" }
+  },
+  "innNight": {
+    "date": "2027-07-10",
+    "localEvents": [
+      { "name": "Example local event", "notes": "Only known once the actual date is set.", "sourceUrl": null }
+    ]
+  }
+}

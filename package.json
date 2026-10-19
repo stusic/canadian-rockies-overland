@@ -1,0 +1,11 @@
+{
+  "name": "canadian-rockies-overland",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Collaborative map-based trip planner for a Denver-to-Canadian-Rockies overland route.",
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/validate-data.mjs",
+    "serve": "node scripts/dev-server.mjs"
+  }
+}

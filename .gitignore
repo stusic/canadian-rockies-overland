@@ -1,0 +1,9 @@
+node_modules/
+_site/
+.DS_Store
+Thumbs.db
+*.log
+
+# Never commit real travel dates or local-event research to this public repo.
+# See data/local-overrides.example.json / data/schema.md.
+data/local-overrides.json
