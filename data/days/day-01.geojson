@@ -1,4 +1,172 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-104.990291, 39.738466], [-104.991124, 40.755085], [-105.175988, 40.761102],
+          [-105.23525, 40.805586], [-105.588156, 41.173221], [-105.618431, 41.339962],
+          [-105.77504, 41.363205], [-105.964502, 41.445146], [-106.09383, 41.552801],
+          [-106.513015, 41.753993], [-106.700592, 41.730644], [-107.213779, 41.792699],
+          [-107.354215, 41.967428], [-107.474141, 42.218783], [-107.443937, 42.362801],
+          [-107.542045, 42.44987], [-108.189497, 42.543205], [-108.210102, 42.806401],
+          [-108.380613, 43.022569], [-108.800638, 43.21193], [-108.999755, 43.221804],
+          [-109.637474, 43.535855], [-109.638785, 43.534723], [-109.653066, 43.53997],
+          [-109.659874, 43.54496], [-109.68728, 43.555301], [-109.710819, 43.56816],
+          [-109.744519, 43.578845], [-109.761838, 43.579334], [-109.770855, 43.586608],
+          [-109.77847, 43.597899], [-109.795192, 43.602955], [-109.803992, 43.620003],
+          [-109.815665, 43.628295], [-109.854558, 43.628351], [-109.886465, 43.631064],
+          [-109.901562, 43.633746], [-109.919396, 43.642371], [-109.921813, 43.631945],
+          [-109.919592, 43.642275], [-109.916245, 43.641658], [-109.935937, 43.651537],
+          [-109.944353, 43.661299], [-109.946002, 43.669195], [-109.963054, 43.692969],
+          [-109.963014, 43.702207], [-109.96684, 43.711836], [-109.974292, 43.715917],
+          [-109.97436, 43.724966], [-109.98106, 43.727421], [-109.981648, 43.730789],
+          [-109.978047, 43.732995], [-109.985587, 43.746383], [-109.998465, 43.751724],
+          [-110.005207, 43.747809], [-110.003862, 43.750946]
+        ]
+      },
+      "properties": {
+        "day": 1,
+        "category": "driving-route",
+        "name": "Denver, CO to Brooks Lake, WY (via Dubois)",
+        "description": "Primary Day 1 driving route: I-25 north to Laramie, then WY/US highways west through Rawlins and Riverton to Dubois, continuing on US-26/287 toward Togwotee Pass with a short spur onto Warm Springs Creek Rd (passing the Sheridan Creek / Warm Springs backup camping area) before returning to the highway and following Brooks Lake Rd (FR 515) up to Brooks Lake. Approx. 460 miles / 9h25m of driving (no stops), road-snapped from OpenStreetMap routing data -- not a field-verified GPS track. This distance and time deliberately EXCLUDE the Union Pass reference point below, which is not part of this route. Brooks Lake Rd (FR 515) has had past temporary closures due to debris flow near Togwotee Pass -- confirm current road status with the Shoshone National Forest before traveling.",
+        "sourceUrl": "https://www.openstreetmap.org",
+        "difficulty": "moderate",
+        "status": "approximate",
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-109.876884, 43.480996] },
+      "properties": {
+        "day": 1,
+        "category": "reference-point",
+        "name": "Union Pass (optional reference -- not part of Day 1 route)",
+        "description": "Historic Continental Divide crossing south of Dubois, elev. ~9,210 ft. Kept visible for reference only, per planning decision: it is NOT included in the Day 1 driving route, mileage, or driving-time calculations above.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Union_Pass",
+        "difficulty": null,
+        "status": "reference",
+        "verified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-110.004, 43.751] },
+      "properties": {
+        "day": 1,
+        "category": "campsite-candidate",
+        "siteStatus": "proposed",
+        "name": "Brooks Lake -- PRIMARY overnight scouting destination",
+        "description": "PRELIMINARY SCOUTING LOCATION, not a confirmed legal campsite. This is the primary Day 1 dispersed-camping scouting target, near Brooks Lake / Brooks Lake Campground in the Shoshone National Forest (elev. ~9,200 ft). Exact dispersed site and legal land-use status have not yet been researched -- no camping-search-area boundary has been drawn until that is verified.",
+        "sourceUrl": "https://www.hipcamp.com/wyoming/shoshone-1/brooks-lake-campground",
+        "difficulty": null,
+        "status": "approximate",
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-109.921799, 43.631941] },
+      "properties": {
+        "day": 1,
+        "category": "campsite-candidate",
+        "siteStatus": "proposed",
+        "name": "Sheridan Creek / Warm Springs -- BACKUP overnight scouting area",
+        "description": "PRELIMINARY SCOUTING LOCATION, not a confirmed legal campsite. This is the Day 1 BACKUP camping area if Brooks Lake doesn't work out: dispersed sites off Warm Springs Creek Rd (reported as FSR 532) in the Shoshone National Forest, about 18 miles west of Dubois, elev. ~7,750 ft. Listed under both the \"Sheridan Creek\" and \"Warm Springs\" names in different camping directories -- treat as the same general area. Legal land-use status has not yet been researched -- no camping-search-area boundary has been drawn until that is verified.",
+        "sourceUrl": "https://maps.campendium.com/us/dubois-wy/nature/warm-springs-dispersed-camping",
+        "difficulty": null,
+        "status": "approximate",
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-109.99631, 43.75418] },
+      "properties": {
+        "day": 1,
+        "category": "fallback-campground",
+        "fallbackForDay": 1,
+        "name": "Pinnacles Campground",
+        "description": "Developed USFS campground on Brooks Lake Rd (FR 515/516), immediately adjacent to Brooks Lake. Fallback if the Brooks Lake dispersed-camping scouting doesn't pan out.",
+        "sourceUrl": "https://www.hipcamp.com/wyoming/shoshone-1/pinnacles-campground",
+        "difficulty": null,
+        "status": "verified",
+        "verified": true,
+        "seasonalRestrictions": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-109.644977, 43.537312] },
+      "properties": {
+        "day": 1,
+        "category": "activity",
+        "name": "National Bighorn Sheep Interpretive Center",
+        "description": "Visitor center and museum on US-26 in Dubois dedicated to the Wind River bighorn sheep herd. Worthwhile stop while passing through town.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/National_Bighorn_Sheep_Interpretive_Center",
+        "difficulty": null,
+        "status": "verified",
+        "verified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-109.631818, 43.533511] },
+      "properties": {
+        "day": 1,
+        "category": "restaurant",
+        "name": "Cowboy Cafe (Dubois, WY)",
+        "description": "Breakfast/lunch/dinner diner on E. Ramshorn Ave in Dubois, open since 1993. Buffalo burgers, wild-game dishes, and well-reviewed pie.",
+        "sourceUrl": "https://duboiswyoming.org/eateries-saloons/",
+        "difficulty": null,
+        "status": "verified",
+        "verified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-109.631583, 43.533518] },
+      "properties": {
+        "day": 1,
+        "category": "restaurant",
+        "name": "Rustic Pine Tavern (Dubois, WY)",
+        "description": "Long-running local tavern on E. Ramshorn St in Dubois; went smoke-free in 2020 under new ownership.",
+        "sourceUrl": "https://cowboystatedaily.com/2024/08/10/drinking-wyoming-in-dubois-the-outlaw-and-rustic-are-255-yards-and-miles-apart",
+        "difficulty": null,
+        "status": "verified",
+        "verified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-107.224395, 41.776202] },
+      "properties": {
+        "day": 1,
+        "category": "fuel-diesel",
+        "name": "TA Travel Center (Rawlins, WY -- I-80 Exit 214)",
+        "description": "24-hour truck stop with diesel pumps, truck parking, and CAT scale, right on the route north of Denver.",
+        "sourceUrl": "https://www.ta-petro.com/location/wy/ta-rawlins/",
+        "difficulty": null,
+        "status": "verified",
+        "verified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-108.379877, 43.015967] },
+      "properties": {
+        "day": 1,
+        "category": "fuel-diesel",
+        "name": "Sinclair / Pit Stop Travel Center (Riverton, WY)",
+        "description": "Listed as a truck stop with diesel and truck parking on S. Federal Blvd in Riverton, the last larger town before Dubois. Sources disagree on whether this station currently pumps diesel -- confirm before counting on it.",
+        "sourceUrl": "https://allstays.com/truckstops-details/93763.php",
+        "difficulty": null,
+        "status": "approximate",
+        "verified": false
+      }
+    }
+  ]
 }
